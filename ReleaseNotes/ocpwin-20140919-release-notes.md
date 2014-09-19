@@ -31,10 +31,13 @@
 * Bytecode:
   * Runtime: working
   * Compiler: working
+  * Interpreter: NOT WORKING (weird, was working before !)
   * Custom Executable: working
   * Dynamic linking of C libraries: working
 * Native code:
   * Compiler: working
+* OCamllex: working
+* OCamlyacc: working
 * OCamldoc: running, not tested
 * Camlp4: running, not tested
 * OCamlbuild: running, NOT WORKING (need `bash`, not available under `cmd.exe`)

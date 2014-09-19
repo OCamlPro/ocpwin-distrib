@@ -4,7 +4,13 @@ OCamlPro's version of OCaml on Windows
 This is an experiment to provide a self-contained OCaml distribution
 for Windows. You can download the ZIP archive, extract the files where
 you want, add the `bin` directory to your PATH, and you can start
-using OCaml bytecode and native compilers.
+using OCaml bytecode and native compilers. In particular, you don't need
+to install Cygwin to use this distribution
+
+We only provide binary releases. If you are interested in getting an
+open-source copy of the sources for your own needs, or in clarifying
+other licensing issues, contact
+[sales@ocamlpro.com](mailto:sales@ocamlpro.com).
 
 ## Stables Releases:
 
@@ -13,6 +19,11 @@ There are no stable releases yet.
 ## Beta Releases: Only on Windows 64 bits !
 
 * 2014 September 19: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20140919-release-notes.md)
+
+## Issues
+
+Use this [bug tracker](https://github.com/OCamlPro/ocpwin-distrib/issues)
+
 
 ## Basic Information on ocp-build
 
