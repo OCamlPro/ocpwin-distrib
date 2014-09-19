@@ -7,7 +7,7 @@ is in  `C:\ocaml-mingw64\lib\`.
 
 ## Basic Usage
 
-You can use all OCaml standard commands as usually.
+You can use all OCaml standard commands as usually, except `ocamlbuild`.
 
 ## More Commands
 
@@ -18,6 +18,10 @@ in this distribution. As these commands make a lot of assumptions that
 the system is a Unix system, there are not likely to become available
 soon.
 
+## Build Systems
+
+* You can create .bat files listing the commands to compile your programs
+* You can use `ocp-build`: basic usage is [described here](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ocp-build/minimal.md)
 
 
 
