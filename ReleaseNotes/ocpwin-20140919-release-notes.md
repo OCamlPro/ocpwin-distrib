@@ -37,9 +37,12 @@
   * Compiler: working
 * OCamldoc: running, not tested
 * Camlp4: running, not tested
-* OCamlbuild: running, NOT WORKING
+* OCamlbuild: running, NOT WORKING (need `bash`, not available under `cmd.exe`)
 
 ### OCaml Patches (+ocp1)
+
+* Relocatable: working (you can move the directory where you want, just
+update the PATH)
 
 ### Flexlink (0.31)
 * Link: working
