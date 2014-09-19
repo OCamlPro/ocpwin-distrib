@@ -45,7 +45,7 @@
 * Link: working
 
 ### ocp-build (2014-09-19)
-* working: read the [stable subset]() to know how to use it
+* working: read the [stable subset](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ocp-build/minimal.md) to know how to use it
 
 ### MinGW64
 
