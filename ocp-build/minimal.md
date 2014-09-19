@@ -1,7 +1,8 @@
 # ocp-build Supported Subset
 
 The goal of this page is to describe a subset of ocp-build features that
-are not going to change over versions.
+are not going to change over versions, to be used in OCamlPro's version of
+OCaml for Windows [ocpwin](http://github.com/OCamlPro/ocpwin-distrib)
 
 ## On the command line:
 
