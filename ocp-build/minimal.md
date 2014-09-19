@@ -22,3 +22,26 @@ To clean the project
 
 > ocp-build clean
 
+## A Simple Library
+
+{{
+begin library "my-library"
+  files = [ "a.ml" "b.ml" "c.mll" "d.mly" ]
+  requires = [ "unix" ]
+end
+}}
+
+## A Simple Program
+
+{{
+begin program "my-program"
+  files = [ "main.ml" ]
+  requires = [ "my-library" ]
+end
+}}
+
+## The `_obuild` directory
+
+All compiled projects are available in a sub-directory `_obuild`
+created by `ocp-build init`. Each project has a sub-directory in 
+`_obuild`, where all generated files are available.
