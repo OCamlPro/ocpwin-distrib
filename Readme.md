@@ -20,6 +20,10 @@ There are no stable releases yet.
 
 * 2014 September 19: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20140919-release-notes.md)
 
+## Usage
+
+Some information is [available here](https://github.com/OCamlPro/ocpwin-distrib/blob/master/Usage/Readme.md)
+
 ## Issues
 
 Use this [bug tracker](https://github.com/OCamlPro/ocpwin-distrib/issues)
