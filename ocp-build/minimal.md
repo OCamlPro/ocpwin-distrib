@@ -24,21 +24,17 @@ To clean the project
 
 ## A Simple Library
 
-{{
-begin library "my-library"
-  files = [ "a.ml" "b.ml" "c.mll" "d.mly" ]
-  requires = [ "unix" ]
-end
-}}
+    begin library "my-library"
+      files = [ "a.ml" "b.ml" "c.mll" "d.mly" ]
+      requires = [ "unix" ]
+    end
 
 ## A Simple Program
 
-{{
-begin program "my-program"
-  files = [ "main.ml" ]
-  requires = [ "my-library" ]
-end
-}}
+    begin program "my-program"
+      files = [ "main.ml" ]
+      requires = [ "my-library" ]
+    end
 
 ## The `_obuild` directory
 
