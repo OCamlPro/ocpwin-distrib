@@ -22,6 +22,35 @@ soon.
 
 * You can create .bat files listing the commands to compile your programs
 * You can use `ocp-build`: basic usage is [described here](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ocp-build/minimal.md)
+* In OCPWin, `ocamlc` and `ocamlopt` accept a new argument `-make` to build
+  an executable, given the main module of the program. See the "Using the
+  Internal Maker" section below.
+
+## Using the internal Maker
+
+In OCPWin, `ocamlc` and `ocamlopt` accept a new argument `-make` to build
+  an executable, given the main module of the program.
+
+For example, for `alt-ergo`, to build the native version, we use:
+
+    ocamlopt -I main -I structures -I util -I sat -I preprocess -I theories -I instances -I parsing -I ..\..\_obuild\graph unix.cmxa nums.cmxa graph.cmxa -o alt-ergo.exe  -make main/main_text.ml
+
+and to build the bytecode version, we use:
+
+    ocamlc -custom -I main -I structures -I util -I sat -I preprocess -I theories -I instances -I parsing -I ..\..\_obuild\graph unix.cma nums.cma graph.cma -o alt-ergo.byte.exe  -make main/main_text.ml
+
+The compiler will search the include directories (`-I` option) to find the 
+sources and compile them, calling `ocamllex` and `ocamlyacc` when needed.
+
+In this example, `ocamlgraph` had been compiled previously using
+`ocp-build` (in the `..\..\_obuild\graph` directory), so it won't be
+recompiled.
+
+The `-make` option takes the filename of the main module of the
+executable as an argument. It MUST be the last argument of the
+compiler (in particular, the `-o` option must be used before).
+
+
 
 
 

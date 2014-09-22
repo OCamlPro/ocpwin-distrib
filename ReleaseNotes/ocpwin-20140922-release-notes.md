@@ -34,8 +34,12 @@ to your PATH.
 
 ### OCaml Patches (+ocp1)
 
+* Maker: `-make` option recursively to build an executable 
+  ([read this](https://github.com/OCamlPro/ocpwin-distrib/blob/master/Usage/Readme.md)
+   for more information)
 * Relocatable: working (you can move the directory where you want, just
 update the PATH)
+
 
 ### Flexlink (0.31)
 * Link: working
