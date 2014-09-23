@@ -18,6 +18,8 @@ There are no stable releases yet.
 
 ## Beta Releases: Only on Windows 64 bits !
 
+* 2014 September 23: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20140923-release-notes.md)
+
 * 2014 September 22: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20140922-release-notes.md)
 
 * 2014 September 21: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20140921-release-notes.md)
