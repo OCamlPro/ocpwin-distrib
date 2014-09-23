@@ -35,11 +35,11 @@ In OCPWin, `ocamlc` and `ocamlopt` accept a new argument `-make` to build
 
 For example, for `alt-ergo`, to build the native version, we use:
 
-    ocamlopt -I main -I structures -I util -I sat -I preprocess -I theories -I instances -I parsing -I ..\..\_obuild\graph unix.cmxa nums.cmxa graph.cmxa -o alt-ergo.exe  -make main/main_text.ml
+    ocamlopt -I ..\..\_obuild\graph -I -- -I main -I structures -I util -I sat -I preprocess -I theories -I instances -I parsing unix.cmxa nums.cmxa graph.cmxa -o alt-ergo.exe  -make main/main_text.ml
 
 and to build the bytecode version, we use:
 
-    ocamlc -custom -I main -I structures -I util -I sat -I preprocess -I theories -I instances -I parsing -I ..\..\_obuild\graph unix.cma nums.cma graph.cma -o alt-ergo.byte.exe  -make main/main_text.ml
+    ocamlc -I ..\..\_obuild\graph -I .. -custom -I main -I structures -I util -I sat -I preprocess -I theories -I instances -I parsing unix.cma nums.cma graph.cma -o alt-ergo.byte.exe  -make main/main_text.ml
 
 The compiler will search the include directories (`-I` option) to find the 
 sources and compile them, calling `ocamllex` and `ocamlyacc` when needed.
