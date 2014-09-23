@@ -31,6 +31,8 @@ soon.
 In OCPWin, `ocamlc` and `ocamlopt` accept a new argument `-make` to build
   an executable, given the main module of the program.
 
+# Building an executable
+
 For example, for `alt-ergo`, to build the native version, we use:
 
     ocamlopt -I main -I structures -I util -I sat -I preprocess -I theories -I instances -I parsing -I ..\..\_obuild\graph unix.cmxa nums.cmxa graph.cmxa -o alt-ergo.exe  -make main/main_text.ml
@@ -49,6 +51,33 @@ recompiled.
 The `-make` option takes the filename of the main module of the
 executable as an argument. It MUST be the last argument of the
 compiler (in particular, the `-o` option must be used before).
+
+# Building a library
+
+After `-make`, you can provide a file with extension `.mllib`,
+containing a list of module names. The compiler will compile and link all the
+modules into a library.
+
+# Packing a file
+
+After `-make`, you can provide a file with extension `.mlpack`,
+containing a list of module names. The compiler will compile and pack
+all the modules into a single module.
+
+# Limiting what is going to be compiled
+
+By default, with `-make`, all modules found in a directory in the path
+will be compiled if their sources are available. This behavior might
+trigger unwanted compilation of modules that have been installed with
+their sources. In this case, you can use `-I --` to specify that all
+the preceeding directories in the path should not be recompiled. For
+example:
+
+     ocamlc -I stdlib -I -- -I project -make project.mllib
+
+Here, sources found in `stdlib` will not be compiled, while sources
+found in `project` are going to be compiled.
+
 
 
 

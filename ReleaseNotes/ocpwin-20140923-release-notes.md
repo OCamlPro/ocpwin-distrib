@@ -51,7 +51,7 @@ update the PATH)
 
 * Builds from MinGW-Builds
 * Partially included only. To download missing files, check the full
- archive [x64-4.8.1-release-posix-seh-rev2.7z][http://www.ocamlpro.com/pub/ocpwin/mingw-builds/x64-4.8.1-release-posix-seh-rev2.7z](Download: 46M)
+ archive [x64-4.8.1-release-posix-seh-rev2.7z](http://www.ocamlpro.com/pub/ocpwin/mingw-builds/x64-4.8.1-release-posix-seh-rev2.7z) (Download: 46M)
 
 
 
