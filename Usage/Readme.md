@@ -31,7 +31,7 @@ soon.
 In OCPWin, `ocamlc` and `ocamlopt` accept a new argument `-make` to build
   an executable, given the main module of the program.
 
-# Building an executable
+### Building an executable
 
 For example, for `alt-ergo`, to build the native version, we use:
 
@@ -52,19 +52,19 @@ The `-make` option takes the filename of the main module of the
 executable as an argument. It MUST be the last argument of the
 compiler (in particular, the `-o` option must be used before).
 
-# Building a library
+### Building a library
 
 After `-make`, you can provide a file with extension `.mllib`,
 containing a list of module names. The compiler will compile and link all the
 modules into a library.
 
-# Packing a file
+### Packing a file
 
 After `-make`, you can provide a file with extension `.mlpack`,
 containing a list of module names. The compiler will compile and pack
 all the modules into a single module.
 
-# Limiting what is going to be compiled
+### Limiting what is going to be compiled
 
 By default, with `-make`, all modules found in a directory in the path
 will be compiled if their sources are available. This behavior might
