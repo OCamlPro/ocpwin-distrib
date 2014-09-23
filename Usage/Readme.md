@@ -39,7 +39,7 @@ For example, for `alt-ergo`, to build the native version, we use:
 
 and to build the bytecode version, we use:
 
-    ocamlc -I ..\..\_obuild\graph -I .. -custom -I main -I structures -I util -I sat -I preprocess -I theories -I instances -I parsing unix.cma nums.cma graph.cma -o alt-ergo.byte.exe  -make main/main_text.ml
+    ocamlc -I ..\..\_obuild\graph -I -- -custom -I main -I structures -I util -I sat -I preprocess -I theories -I instances -I parsing unix.cma nums.cma graph.cma -o alt-ergo.byte.exe  -make main/main_text.ml
 
 The compiler will search the include directories (`-I` option) to find the 
 sources and compile them, calling `ocamllex` and `ocamlyacc` when needed.
