@@ -15,6 +15,10 @@ to your PATH.
 
 * To test, start the "cmd.exe" terminal from the Start Menu
 
+* In Cygwin, you should be careful to put the `bin` repository of
+ocpwin at the beginning of the PATH instead of at the end, otherwise,
+ocpwin will conflict with mingw cross-compilers installed in Cygwin.
+
 ## Latest status of 4.01.0+ocp1 on Mingw64
 
 ### OCaml Distribution (4.01.0)
