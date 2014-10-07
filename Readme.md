@@ -12,11 +12,18 @@ open-source copy of the sources for your own needs, or in clarifying
 other licensing issues, contact
 [sales@ocamlpro.com](mailto:sales@ocamlpro.com).
 
+## Downloads
+
+Go to the latest release note, a download link should be available at
+the beginning of the note.
+
 ## Stables Releases:
 
 There are no stable releases yet.
 
 ## Beta Releases: Only on Windows 64 bits !
+
+* 2014 October 7: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20141007-release-notes.md)
 
 * 2014 September 30: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20140930-release-notes.md)
 
