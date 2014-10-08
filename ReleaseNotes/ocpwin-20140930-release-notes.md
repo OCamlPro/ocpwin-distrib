@@ -2,7 +2,7 @@
 
 ## Downloads
 
-* Download the OCaml 4.01.0+ocp1 zip installer: 
+* Download the OCaml 4.01.0+ocp1 installer: 
    [ocpwin-20140930-mingw64-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin-20140930-mingw64-4.01.0+ocp1.exe)
    (Download size: 82 M, Installed size: 437M, OCaml 4.01.0+ocp1 + flexlink + mingw + ocp-build)
 
