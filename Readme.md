@@ -14,14 +14,17 @@ other licensing issues, contact
 
 ## Downloads
 
-Go to the latest release note, a download link should be available at
-the beginning of the note.
+[Use this page for the latest version](https://github.com/OCamlPro/ocpwin-distrib/blob/master/Download.md) or go to one of beta releases,
+a corresponding download link should be available at the beginning of
+the release note.
 
 ## Stables Releases:
 
 There are no stable releases yet.
 
 ## Beta Releases: Only on Windows 64 bits !
+
+Release notes:
 
 * 2014 October 7: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20141007-release-notes.md)
 
