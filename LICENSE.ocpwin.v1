@@ -1,0 +1,93 @@
+                  OCPWin License, version 1
+
+             IMPORTANT - READ BEFORE INSTALLING.
+
+Do not use the Materials provided under this license agreement
+("Agreement"), until you have carefully read the following terms and
+conditions.
+
+By using the Materials, you agree to be bound by the terms of this
+Agreement. If you do not agree to the terms of this Agreement, do not
+use the Materials.
+
+PREAMBLE
+
+As a member of the OCaml Consortium, OCamlPro is granted the right to
+distribute modified versions of OCaml without distributing the
+corresponding sources.
+
+The following license allows you to redistribute under your terms any
+significant derivative work from this Materials that does not include
+the OCaml compiler parts, but only OCaml libraries (stdlib,
+otherlibs) and Third-Party Contents.
+
+1. DEFINITIONS
+
+"Materials" are defined as the software, documentation and other
+materials, including any updates and upgrade thereto, that are
+provided to you under this Agreement.  Materials also include the
+Redistributables and Third-Party Contents as defined below.
+
+"Redistributables" are defined as the files of the OCaml runtime
+(ocamlrun, libcamlrun, libasmrun), the OCaml standard library (stdlib)
+and the OCaml other libraries (otherlibs), that are distributed within
+these Materials. The compiler files and the compiler libraries
+(compilerlibs) are not part of the Redistributables.
+
+"Third-Party Contents" are defined as the files from the MinGW-Builds
+snapshots, under Open Source licenses. The license terms for those
+programs or materials are described in the installation
+directory. OCamlPro is not liable for them.
+
+2. LICENSE GRANT
+
+Subject to all of the terms and conditions of this Agreement, OCamlPro
+SAS ("OCamlPro") grants to you a non-exclusive, non-assignable,
+copyright license to use the Materials, to modify any portions
+thereof, that are defined as Redistributables and are provided in text
+form, and to DISTRIBUTE THE REDISTRIBUTABLES, or any portions thereof,
+as part of the product or application you developed using the
+Materials. 
+
+The scope and duration (time period) of your license is at most two
+(2) years, starting at the time you obtained the Materials from
+OCamlPro. This Agreement terminates without notice on the last day of
+this time period. OCamlPro may terminate this license immediately if
+you are in breach of any of its terms and conditions and such breach
+is not cured within thirty (30) days of written notice from OCamlPro.
+
+3. DISCLAIMER OF WARRANTY
+
+Because this software is licensed free of charge, there is no warranty
+for the program. OCamlPro makes no warranty or representation that the
+operation of the software in this compilation will be error-free, and
+OCamlPro is under no obligation to provide any services, by way of
+maintenance, update, or otherwise.
+
+THIS SOFTWARE AND THE ACCOMPANYING FILES ARE LICENSED “AS IS” AND
+WITHOUT WARRANTIES AS TO PERFORMANCE OR MER- CHANTABILITY OR ANY OTHER
+WARRANTIES WHETHER EXPRESSED OR IMPLIED. NO WARRANTY OF FITNESS FOR A
+PARTICULAR PUR- POSE IS OFFERED. THE ENTIRE RISK AS TO THE QUALITY AND
+PER- FORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PRO- GRAM PROVE
+DEFECTIVE, YOU ASSUME THE COST OF ALL NECES- SARY SERVICING, REPAIR OR
+CORRECTION.
+
+4. LIMITATION OF LIABILITY
+
+IN NO EVENT WILL OCAMLPRO, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE PRORAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR
+DAMAGES, INCLUDING ANY GENERAL, SPE- CIAL, INCIDENTAL OR CONSEQUENTIAL
+DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM
+(INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED
+INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE
+OF THE PROGRAM TO OPERATE WITH ANY OTHER PRO- GRAMS), EVEN IF OCAMLPRO
+OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+5. APPLICABLE LAWS: Any claim arising under or relating to this
+Agreement shall be governed by the internal substantive laws of the
+French State, without regard to principles of conflict of laws. 
+
+END OF TERMS AND CONDITIONS
+
+Address all correspondence regarding this license to the OCamlPro team at
+email address sales@ocamlpro.com.
