@@ -1,6 +1,8 @@
 OCamlPro's version of OCaml on Windows
 ======================================
 
+See [TypeRex's page on OCPWin](http://www.typerex.org/ocpwin.html)
+
 This is an experiment to provide a self-contained OCaml distribution
 for Windows. You can download the ZIP archive, extract the files where
 you want, add the `bin` directory to your PATH, and you can start
