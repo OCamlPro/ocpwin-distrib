@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd redist
+
 for i in `cat packages/packages.list`; do
   rm -rf "packages/$i/$i"
 done

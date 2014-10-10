@@ -2,7 +2,16 @@
 
 A set of useful packages that can be compiled with OCPWin
 
-## Build and Installation
+## From github
+
+If you get it from github, you should first populate the `redist/`
+sub-directory under Linux:
+
+    ./script/make-platform.sh
+
+## The `redist/` sub-directory
+
+### Build and Installation
 
 To build and install, just use:
 
@@ -18,16 +27,10 @@ To clean the repository, just use:
 
     make clean
 
-## From github
-
-If you get it from github, you should first populate the directory under Linux:
-
-    ./script/make-platform.sh
-
-## Packaging
+### Packaging
 
 To add a package:
-* Put the OPAM archive in `archives/`
+* Put the OPAM archive in `../archives/`
 * Add the package "name.version" to `packages/packages.list`
 * Create a directory `packages/name.version/" containing at lest:
   * `make-configure.bat`: should configure the package

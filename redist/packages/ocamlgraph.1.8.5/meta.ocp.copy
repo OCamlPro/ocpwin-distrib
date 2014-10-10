@@ -1,0 +1,6 @@
+
+generated = true
+
+begin library "ocamlgraph"
+  files = [ "graph.ml" ]
+end
