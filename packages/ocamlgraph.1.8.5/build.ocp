@@ -1,0 +1,24 @@
+begin
+  dirname += [ "ocamlgraph.1.8.5" ]
+    begin library "ocamlgraph"
+     nodeps = [ "Graph" ]
+     files = [
+        pack Graph [
+            "src/sig.mli" "src/sig_pack.mli" "src/dot_ast.mli"
+            "lib/unionfind.ml" "lib/heap.ml" "lib/bitv.ml" "src/version.ml"
+            "src/util.ml" "src/blocks.ml"
+              "src/persistent.ml"
+            "src/imperative.ml" "src/delaunay.ml" "src/builder.ml"
+            "src/classic.ml" "src/rand.ml" "src/oper.ml" "src/components.ml"
+            "src/path.ml" "src/nonnegative.ml" "src/traverse.ml"
+            "src/coloring.ml" "src/topological.ml" "src/kruskal.ml"
+            "src/flow.ml" "src/prim.ml" "src/dominator.ml" "src/graphviz.ml"
+            "src/gml.mll" "src/dot_parser.ml" "src/dot_lexer.ml"
+            "src/dot.ml" "src/pack.ml" "src/gmap.ml" "src/minsep.ml"
+            "src/cliquetree.ml" "src/mcs_m.ml" "src/md.ml" "src/strat.ml"
+            "src/fixpoint.ml" "src/leaderlist.ml" "src/contraction.ml"
+            "src/graphml.ml" "src/merge.ml"
+        ]
+     ]
+  end
+end
