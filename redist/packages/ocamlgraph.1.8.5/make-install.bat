@@ -12,4 +12,4 @@ copy %COMPDIR%\*.cmx %DSTDIR%\
 copy %COMPDIR%\*.cmxa %DSTDIR%\
 copy %COMPDIR%\*.cmxs %DSTDIR%\
 copy %COMPDIR%\*.a %DSTDIR%\
-copy meta.ocp.copy %DSTDIR%\meta.ocp
+copy files\meta.ocp.copy %DSTDIR%\meta.ocp

@@ -8,6 +8,6 @@ done
 
 for i in `cat packages/packages.list`; do
   (cd packages/$i;
-    tar xf ../archives/$i"+opam.tar.gz")
+    tar xf ../../../archives/$i"+opam.tar.gz")
 done
 

@@ -1,0 +1,11 @@
+let one = 1
+let sign _ = 1
+let gcd _ _ = 1
+let div _ _ = 1
+let mul _ _ = 1
+let equal _ _ = false
+let cdiv _ _ = 1
+let fdiv _ _ = 1
+let rem _ _ = 1
+let pow _ _ = 1
+let to_float _ = 1.0

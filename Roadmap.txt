@@ -2,14 +2,18 @@
 
 ## Done set
 
-menhir.20130912
-ocamlgraph.1.8.5
+With no documentation yet.
+
+* menhir.20130912
+   TODO: add a meta.ocp file
+* ocamlgraph.1.8.5
+* alt-ergo.0.95.2
 
 ## First set
 
-lwt.2.4.5
-js_of_ocaml.2.5
-ocamlfind.1.5.2
+* lwt.2.4.5
+* js_of_ocaml.2.5
+* ocamlfind.1.5.2
 
 ## Second set (TypeRex)
 
