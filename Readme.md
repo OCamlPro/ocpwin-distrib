@@ -28,6 +28,8 @@ There are no stable releases yet.
 
 Release notes:
 
+* 20141010: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20141010-release-notes.md)
+
 * 20141008: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20141008-release-notes.md)
 
 * 2014 October 7: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20141007-release-notes.md)
