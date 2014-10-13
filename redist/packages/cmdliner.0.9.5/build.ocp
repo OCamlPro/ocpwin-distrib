@@ -1,0 +1,6 @@
+
+dirname += [ "cmdliner.0.9.5" ]
+
+begin library "cmdliner"
+ files = [ "src/cmdliner.ml" ]
+end

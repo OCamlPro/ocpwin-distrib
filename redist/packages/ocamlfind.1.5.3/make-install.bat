@@ -1,5 +1,5 @@
-set PACKAGE=ocamlgraph
-set VERSION=1.8.5
+set PACKAGE=ocamlfind
+set VERSION=1.5.3
 
 @for /F "tokens=1" %%i in ('ocamlc -where') DO (
   set "OCPLIB=%%i"
@@ -16,3 +16,4 @@ copy %COMPDIR%\*.cmxa %DSTDIR%\
 copy %COMPDIR%\*.cmxs %DSTDIR%\
 copy %COMPDIR%\*.a %DSTDIR%\
 copy files\meta.ocp.copy %DSTDIR%\meta.ocp
+\alt-ergo\alt-ergo.asm.exe %DSTBIN%\alt-ergo.exe

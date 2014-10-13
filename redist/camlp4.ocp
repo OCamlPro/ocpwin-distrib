@@ -1,0 +1,66 @@
+begin
+  dirname = "%{camlp4lib_FULL_DST_DIR}%"
+  generated = true
+
+  begin program "camlp4"
+    requires = [ "dynlink" "camlp4lib" ]
+  end
+
+  begin objects "Camlp4OCamlOriginalQuotationExpander"
+    files = [ "Camlp4Parsers/Camlp4OCamlOriginalQuotationExpander.ml"]
+    requires = [ "camlp4lib" "Camlp4OCamlParser" "Camlp4QuotationCommon" ]
+  end
+
+end
+
+begin library "use-camlp4"
+    requires = [
+      "camlp4" "camlp4-pr-p"
+    ]
+end
+
+begin library "syntax-for-camlp4"
+    has_asm = false
+    requires = [
+      "camlp4lib" "camlp4-pa-o" "camlp4-pa-op" "camlp4-pr-p"
+    ]
+end
+
+begin syntax "camlp4-extensions.syntax"
+    has_asm = false
+    requires = [
+      "camlp4"
+        "syntax-for-camlp4"
+        "Camlp4QuotationCommon"
+        "Camlp4OCamlRevisedQuotationExpander"
+        "Camlp4GrammarParser"
+    ]
+end
+
+begin library "camlp4.quotation.o"
+    has_asm = false
+    requires = [
+      "camlp4"
+        "syntax-for-camlp4"
+        "Camlp4QuotationCommon"
+        "Camlp4OCamlOriginalQuotationExpander"
+    ]
+end
+
+begin library "camlp4.extend"
+    has_asm = false
+    requires = [
+      "camlp4"
+        "syntax-for-camlp4"
+        "Camlp4GrammarParser"
+    ]
+end
+
+begin syntax "camlp4-extensions.o.syntax"
+    has_asm = false
+    requires = [
+      "camlp4"
+        "camlp4.extend"
+        "camlp4.quotation.o"
+    ]
+end

@@ -1,5 +1,5 @@
-set PACKAGE=ocamlgraph
-set VERSION=1.8.5
+set PACKAGE=react
+set VERSION=1.2.0
 
 @for /F "tokens=1" %%i in ('ocamlc -where') DO (
   set "OCPLIB=%%i"

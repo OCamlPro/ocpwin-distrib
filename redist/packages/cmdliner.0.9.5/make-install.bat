@@ -1,5 +1,5 @@
-set PACKAGE=ocamlgraph
-set VERSION=1.8.5
+set PACKAGE=cmdliner
+set VERSION=0.9.5
 
 @for /F "tokens=1" %%i in ('ocamlc -where') DO (
   set "OCPLIB=%%i"

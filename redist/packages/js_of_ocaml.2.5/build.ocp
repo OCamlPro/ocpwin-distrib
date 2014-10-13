@@ -1,0 +1,48 @@
+begin
+  dirname += [ "js_of_ocaml.2.5"  ]
+
+  compiler_files = [
+          "compiler_version.ml" "pretty_print.ml" "util.ml"
+            "option.ml" "reserved.ml" "varPrinter.ml" "dgraph.ml"
+            "code.ml" "javascript.ml" "vlq64.ml" "source_map.ml"
+            "js_output.ml" "js_simpl.ml" "parse_info.ml" "js_token.ml"
+            "js_parser.mly" (
+              ocamlyacc = [ "menhir";"--external-tokens" "Js_token" ]
+            )
+            "js_lexer.mll" "parse_js.ml"
+            "annot_parser.mly" (
+              ocamlyacc = [ "menhir" ]
+            )
+            "annot_lexer.mll" "instr.ml"
+                "primitive.ml" "subst.ml" "pure_fun.ml" "deadcode.ml"
+                "flow.ml" "specialize.ml" "specialize_js.ml" "eval.ml"
+                "inline.ml" "tailcall.ml" "freevars.ml" "phisimpl.ml"
+                "js_traverse.ml" "js_assign.ml" "js_tailcall.ml"
+                    "linker.ml" "parse_bytecode.ml" "generate.ml" "driver.ml"
+                "pseudoFs.ml"
+  ]
+
+    begin library "js_of_ocaml.compiler"
+        dirname += [ "compiler" ]
+        archive = "compiler"
+        requires = [ "findlib" "bytes" "cmdliner" ]
+        files = [ pack Compiler [ compiler_files ] ]
+    end
+
+    begin program "js_of_ocaml"
+        dirname += [ "compiler" ]
+        requires = [ "findlib" "bytes" "cmdliner" "js_of_ocaml.compiler" ]
+        files = [ compiler_files
+            "commonArg.ml" "compileArg.ml" "compile.ml"
+       ]
+    end
+
+    begin library "js_of_ocaml.log"
+        dirname += [ "lib/log" ]
+        requires = [ "lwt.log" ]
+        archive = "logger"
+        requires = []
+        files = [ "lwt_log_js.ml"  ]
+    end
+
+end

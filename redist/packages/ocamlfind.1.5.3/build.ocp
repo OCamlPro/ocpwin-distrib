@@ -1,0 +1,18 @@
+begin
+  dirname += [ "ocamlfind.1.5.3" "src" ]
+
+  begin library "findlib"
+    dirname += "findlib"
+    files = [
+      "findlib_config.ml"
+        "fl_split.ml" "fl_metatoken.ml" "fl_meta.mll" "fl_metascanner.ml"
+        "fl_topo.ml" "fl_package_base.ml" "findlib.ml" "fl_args.ml"
+      ]
+  end
+
+  begin library "bytes"
+    dirname += "bytes"
+    files = [ "bytes.ml" ]
+  end
+
+end

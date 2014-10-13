@@ -1,0 +1,6 @@
+
+dirname += [ "react.1.2.0" ]
+
+begin library "react"
+ files = [ "src/react.ml" ]
+end
