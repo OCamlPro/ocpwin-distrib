@@ -29,8 +29,6 @@ package "camlp4.extend" (
   archive(syntax,preprocessor) = "-parser Camlp4GrammarParser"
 )
 
-
-
 *)
 
 
@@ -54,6 +52,18 @@ package "camlp4.extend" (
     files = [
       "lwt_log_rules.mli"
       "lwt_log_core.ml"
+    ]
+  end
+
+  begin library "lwt.unix"
+    srcbase = %string( strings = dirname sep = "\\")
+    dirname += [ "src" "unix" ]
+    archive = "lwt-unix"
+    requires = [ "lwt" ]
+    o += [ "-I" srcbase ]
+    files = [
+      "lwt_sys.ml" "lwt_engine.ml" "lwt_main.ml" "lwt_unix_jobs_generated.ml" "lwt_unix.ml" "lwt_bytes.ml" "lwt_io.ml" "lwt_chan.ml" "lwt_log.ml" "lwt_daemon.ml" "lwt_gc.ml" "lwt_process.ml" "lwt_throttle.ml" "lwt_timeout.ml"
+  "lwt_unix_windows.c"
     ]
   end
 

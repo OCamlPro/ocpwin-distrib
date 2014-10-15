@@ -22,7 +22,7 @@ begin
                 "pseudoFs.ml"
   ]
 
-    begin library "js_of_ocaml.compiler"
+  begin library "js_of_ocaml.compiler"
         dirname += [ "compiler" ]
         archive = "compiler"
         requires = [ "findlib" "bytes" "cmdliner" ]
@@ -38,11 +38,41 @@ begin
     end
 
     begin library "js_of_ocaml.log"
-        dirname += [ "lib/log" ]
+        dirname += [ "lib" "log" ]
         requires = [ "lwt.log" ]
         archive = "logger"
-        requires = []
         files = [ "lwt_log_js.ml"  ]
     end
+
+  begin objects "js_of_ocaml.pa"
+    dirname += [ "lib" "syntax" ]
+    syntax =   [ "camlp4-extensions.syntax" ]
+    comp = [ "-I" "+camlp4" ]
+    files = [ "pa_js.ml" ]
+    requires = [ "camlp4-extensions.syntax" ]
+
+  end
+
+  begin syntax "js_of_ocaml.syntax"
+    requires = [ "camlp4o" "js_of_ocaml.pa" ]
+  end
+
+  begin library "js_of_ocaml.lib"
+    dirname += "lib"
+    archive = "js_of_ocaml"
+    syntax = "js_of_ocaml.syntax"
+    files = [
+      "js.ml"
+        "dom.ml" "typed_array.ml" "dom_html.ml" "dom_svg.ml" "file.ml" "dom_events.ml" "firebug.ml" "lwt_js.ml" "sys_js.ml" "regexp.ml" "cSS.ml" "url.ml" "form.ml" "xmlHttpRequest.ml" "lwt_js_events.ml" "json.ml" "jsonp.ml" "webGL.ml" "webSockets.ml" "keycode.ml" "eventSource.ml" "stubs.c" ]
+    requires = [  "js_of_ocaml.syntax" "lwt" ]
+  end
+
+  begin library "js_of_ocaml.graphics"
+    dirname += [ "lib" "graphics" ]
+    archive = "graphics_js"
+    syntax = "js_of_ocaml.syntax"
+    files = [ "graphics_js.ml" ]
+    requires = [  "js_of_ocaml.syntax" "lwt" "js_of_ocaml.lib" "lwt.log" ]
+  end
 
 end
