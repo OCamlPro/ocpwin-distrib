@@ -2,8 +2,20 @@
 
 ## Downloads
 
+### 64 bit versions
+
 * OCaml 4.01.0+ocp1 64bits installer: 
    [ocpwin64-20141031-mingw64-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin64/ocpwin64-20141031-mingw64-4.01.0+ocp1.exe)
+   (Download size: 71 M, Installed size: 437M, OCaml 4.01.0+ocp1 + flexlink + mingw + ocp-build)
+
+* OCaml 4.01.0+ocp1 64bits installer: 
+   [ocpwin64-20141031-mingw64-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin64/ocpwin64-20141031-mingw64-4.01.0+ocp1.exe)
+   (Download size: 71 M, Installed size: 437M, OCaml 4.01.0+ocp1 + flexlink + mingw + ocp-build)
+
+### 32 bit versions
+
+* OCaml 4.01.0+ocp1 32bits installer: 
+   [ocpwin32-20141031-mingw-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin32/ocpwin32-20141031-mingw-4.01.0+ocp1.exe)
    (Download size: 71 M, Installed size: 437M, OCaml 4.01.0+ocp1 + flexlink + mingw + ocp-build)
 
 * OCaml 4.01.0+ocp1 32bits installer: 
