@@ -1,0 +1,11 @@
+begin
+  dirname += [ "ssl.0.4.7" ]
+  cclib = [ "-lcrypto" "-lssl" ]
+  begin library "ssl"
+    files = [ "src/ssl.ml" "src/ssl_stubs.c" ]
+  end
+  begin library "ssl_threads"
+    files = [ "src/ssl_threads.ml" ]
+    requires = [ "ssl" ]
+  end
+end

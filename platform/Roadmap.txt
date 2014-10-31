@@ -1,0 +1,53 @@
+# Roadmap
+
+## Done set
+
+With no documentation yet.
+
+* menhir.20130912
+   TODO: add a meta.ocp file
+* ocamlgraph.1.8.5
+* alt-ergo.0.95.2
+
+## First set
+
+* lwt.2.4.5
+* js_of_ocaml.2.5
+* ocamlfind.1.5.2
+
+## Second set (TypeRex)
+
+atd.1.1.2
+atdgen.1.4.0
+biniou.1.0.9
+cmdliner.0.9.5
+cohttp.0.11.2
+conduit.0.5.1
+cppo.0.9.4
+cryptokit.1.9
+easy-format.1.0.2
+fieldslib.109.20.03
+lablgtk.2.16.0
+oasis.0.4.4
+ocaml-data-notation.0.0.11
+ocamlify.0.0.1
+ocamlmod.0.0.7
+ocplib-endian.0.7
+opam2web.1.3.1
+optcomp.1.6
+ounit.2.0.0
+re.1.2.2
+react.1.2.0
+reactiveData.0.1
+sexplib.111.25.00
+ssl.0.4.7
+stringext.1.0.0
+type_conv.111.13.00
+tyxml.3.3.0
+uri.1.7.2
+uutf.0.9.3
+yojson.1.1.8
+zarith.1.2
+
+## More ?
+

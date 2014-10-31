@@ -1,0 +1,48 @@
+begin
+ dirname += [ "menhir.20130912" "src" ]
+
+ asmcomp = [ "-g" ]
+ asmlink = [ "-g" ]
+
+ begin library "menhirLib"
+   files = [
+     pack MenhirLib [
+      "infiniteArray.ml"
+       "packedIntArray.ml"
+      "rowDisplacement.ml"
+      "engineTypes.ml"
+      "engine.ml"
+      "tableFormat.ml"
+      "tableInterpreter.ml"
+      "convert.ml"
+     ]
+   ]
+ end
+
+ begin program "menhir"
+  requires = [ "unix" "menhirLib" ]
+  files = [
+    "Fix.ml" "IO.ml" "installation.ml" "keyword.ml" "lineCount.mll"
+      "positions.ml" "stringSet.ml" "version.ml" "settings.ml" "printer.ml"
+      "action.ml" "mark.ml" "stringMap.ml" "misc.ml" "breadth.ml"
+      "codeBits.ml" "gSet.ml" "compressedBitSet.ml" "option.ml"
+      "dot.ml" "error.ml" "parameters.ml" "parserAux.ml"
+      "parser.mly"
+      "IL.mli" "stretch.mli"  "syntax.mli" "unparameterizedSyntax.mli"
+      "concreteSyntax.mli" "internalSyntax.mli" "lookahead.mli"
+      "lexer.mll" "tarjan.ml" "unionFind.ml" "parameterizedGrammar.ml"
+      "partialGrammar.ml" "time.ml" "preFront.ml" "tokenType.ml"
+      "interface.ml" "lexdep.mll" "lexmli.mll" "infer.ml" "listMonad.ml"
+      "nonTerminalDefinitionInlining.ml" "reachability.ml"
+      "unparameterizedPrinter.ml" "front.ml" "gMap.ml" "patricia.ml"
+      "grammar.ml" "codePieces.ml" "item.ml" "derivation.ml"
+ (* "menhirLib.ml" *)
+      "lr0.ml" "slr.ml" "lr1.ml" "lr1partial.ml" "conflict.ml"
+      "invariant.ml" "codeBackend.ml"
+      "coqBackend.ml" "pprint.ml"
+      "cst.ml" "traverse.ml" "inliner.ml" "referenceInterpreter.ml"
+      "sentenceParser.mly" "sentenceLexer.mll" "interpret.ml"
+      "tableBackend.ml" "back.ml" "menhir.ml"          ]
+
+ end
+end

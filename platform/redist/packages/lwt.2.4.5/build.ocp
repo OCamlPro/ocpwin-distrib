@@ -1,0 +1,70 @@
+begin
+ dirname += "lwt.2.4.5"
+
+  begin library "lwt"
+    dirname += [ "src" "core"]
+    files = [
+      "lwt_sequence.ml" "lwt.ml" "lwt_mutex.ml"
+      "lwt_condition.ml" "lwt_list.ml" "lwt_mvar.ml"
+      "lwt_pool.ml" "lwt_stream.ml" "lwt_switch.ml"
+      "lwt_util.ml" "lwt_pqueue.ml"
+    ]
+  end
+
+(* ocamlfind:
+   -package camlp4
+   -syntax camlp4o
+   -package camlp4.extend
+   -syntax camlp4o
+   -package camlp4.quotations.o
+   -syntax camlp4o
+   syntax/pa_lwt.ml
+
+  package "camlp4.quotation.o" (
+    requires = "camlp4"
+    archive(syntax,preprocessor) = "-parser Camlp4QuotationCommon -parser Camlp4OCamlOriginalQuotationExpander"
+  )
+package "camlp4.extend" (
+  requires = "camlp4"
+  archive(syntax,preprocessor) = "-parser Camlp4GrammarParser"
+)
+
+*)
+
+
+  begin objects "lwt.pa"
+    has_asm = false
+    dirname += "syntax"
+    syntax =   [ "camlp4-extensions.o.syntax" ]
+    comp = [ "-I" "+camlp4" ]
+    files = [ "pa_lwt_options.ml" "pa_lwt.ml" ]
+    requires = [ "camlp4-extensions.o.syntax" ]
+  end
+
+  begin syntax "lwt.syntax"
+    requires = [ "camlp4o" "lwt.pa" ]
+  end
+
+  begin library "lwt.log"
+    dirname += [ "src" "logger" ]
+    syntax = [ "lwt.syntax" ]
+    requires = [ "lwt" "lwt.syntax" ]
+    files = [
+      "lwt_log_rules.mli"
+      "lwt_log_core.ml"
+    ]
+  end
+
+  begin library "lwt.unix"
+    srcbase = %string( strings = dirname sep = "\\")
+    dirname += [ "src" "unix" ]
+    archive = "lwt-unix"
+    requires = [ "lwt" ]
+    o += [ "-I" srcbase ]
+    files = [
+      "lwt_sys.ml" "lwt_engine.ml" "lwt_main.ml" "lwt_unix_jobs_generated.ml" "lwt_unix.ml" "lwt_bytes.ml" "lwt_io.ml" "lwt_chan.ml" "lwt_log.ml" "lwt_daemon.ml" "lwt_gc.ml" "lwt_process.ml" "lwt_throttle.ml" "lwt_timeout.ml"
+  "lwt_unix_windows.c"
+    ]
+  end
+
+end

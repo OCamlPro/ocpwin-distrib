@@ -1,0 +1,6 @@
+
+generated = true
+
+begin library "react"
+  files = [ "react.ml" ]
+end
