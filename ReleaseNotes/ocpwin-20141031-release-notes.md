@@ -4,24 +4,19 @@
 
 ### 64 bit versions
 
-* OCaml 4.01.0+ocp1 64bits installer: 
-   [ocpwin64-20141031-mingw64-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin64/ocpwin64-20141031-mingw64-4.01.0+ocp1.exe)
-   (Download size: 71 M, Installed size: 437M, OCaml 4.01.0+ocp1 + flexlink + mingw + ocp-build)
+* Minimal Version (70M): [ocpwin64-20141031-mingw64-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin64/ocpwin64-20141031-mingw64-4.01.0+ocp1.exe)
+   (Installed size: 432M, OCaml 4.01.0+ocp1 + flexlink + ocp-build + minimal-mingw64)
 
-* OCaml 4.01.0+ocp1 64bits installer: 
-   [ocpwin64-20141031-mingw64-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin64/ocpwin64-20141031-mingw64-4.01.0+ocp1.exe)
-   (Download size: 71 M, Installed size: 437M, OCaml 4.01.0+ocp1 + flexlink + mingw + ocp-build)
+* Complete Version (132M) (: [ocpwin64-full-20141031-mingw64-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin64/ocpwin64-full-20141031-mingw64-4.01.0+ocp1.exe)
+   (OCaml 4.01.0+ocp1 + flexlink + ocp-build + mingw64)
 
 ### 32 bit versions
 
-* OCaml 4.01.0+ocp1 32bits installer: 
-   [ocpwin32-20141031-mingw-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin32/ocpwin32-20141031-mingw-4.01.0+ocp1.exe)
-   (Download size: 71 M, Installed size: 437M, OCaml 4.01.0+ocp1 + flexlink + mingw + ocp-build)
+* Minimal Version (71M): [ocpwin32-20141031-mingw32-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin32/ocpwin32-full-20141031-mingw32-4.01.0+ocp1.exe)
+   (Installed size: 432M, OCaml 4.01.0+ocp1 + flexlink + ocp-build + minimal-mingw32)
 
-* OCaml 4.01.0+ocp1 32bits installer: 
-   [ocpwin32-20141031-mingw-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin32/ocpwin32-20141031-mingw-4.01.0+ocp1.exe)
-   (Download size: 71 M, Installed size: 437M, OCaml 4.01.0+ocp1 + flexlink + mingw + ocp-build)
-
+* Complete Version (141M): [ocpwin32-20141031-mingw32-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin32/ocpwin32-full-20141031-mingw32-4.01.0+ocp1.exe)
+   (OCaml 4.01.0+ocp1 + flexlink + ocp-build + mingw32)
 
 ## Installation and Use
 
@@ -74,6 +69,10 @@ update the PATH)
  archive [x64-4.8.1-release-posix-seh-rev2.7z](http://www.ocamlpro.com/pub/ocpwin/mingw-builds/x64-4.8.1-release-posix-seh-rev2.7z) (Download: 46M)
 
 ## Changes
+
+* 2014-10-31:
+  * Fix missing files in minimal-mingw (dllcrt2.o, etc.)
+  * Provide minimal and complete downloads
 
 * 2014-10-10:
   * Fix bug in 64bits in flexlink preventing finding libgcc.a
