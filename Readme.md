@@ -100,5 +100,11 @@ Protzenko. The main differences are:
 
 <table width="100%">
 <tr><td width="50%">Feature</td><td width="25%">OcpWin</td><td width="25%">OCaml4Windows</td></tr>
-
+<tr><td>32 bit version</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>64 bit version</td><td>Yes</td><td></td></tr>
+<tr><td>MinGW C-Compiler</td><td>Included</td><td>Use Cygwin MinGW</td></tr>
+<tr><td>Cygwin Installed</td><td>Optional</td><td>Mandatory</td></tr>
+<tr><td>MSCV</td><td>Yes</td><td>No</td></tr>
+<tr><td>MSVC configuration</td><td>Auto-detected</td><td>No</td></tr>
+<tr><td>Build Systems</td><td>ocp-build, ocamlbuild, ocamlc -make</td><td>ocamlfind, ocamlbuild</td></tr>
 </table>
