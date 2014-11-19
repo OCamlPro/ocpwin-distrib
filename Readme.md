@@ -92,3 +92,13 @@ Use this [bug tracker](https://github.com/OCamlPro/ocpwin-distrib/issues)
 
 Read the [stable subset](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ocp-build/minimal.md)
 to know how to use it in a forward compatibility mode.
+
+## Differences with [OCaml on Windows](http://protz.github.io/ocaml-installer/)
+
+Another installer is also provided for OCaml on Windows, by Jonathan
+Protzenko. The main differences are:
+
+<table width="100%">
+<tr><td width="50%">Feature</td><td width="25%">OcpWin</td><td width="25%">OCaml4Windows</td></tr>
+
+</table>
