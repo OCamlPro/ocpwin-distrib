@@ -19,7 +19,7 @@ Download Latest version of ocpwin-distrib
 * Minimal Version (71M): [ocpwin32-20141117-mingw32-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin32/ocpwin32-20141117-mingw32-4.01.0+ocp1.exe)
    (OCaml 4.01.0+ocp1 + flexlink + ocp-build + minimal-mingw32)
 
-* Complete Version (132M): [ocpwin32-20141117-full-mingw32-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin32/ocpwin32-full-20141117-mingw32-4.01.0+ocp1.exe)
+* Complete Version (132M): [ocpwin32-20141117-full-mingw32-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin32/ocpwin32-20141117-full-mingw32-4.01.0+ocp1.exe)
    (OCaml 4.01.0+ocp1 + flexlink + ocp-build + complete mingw32)
 
 * MSVC Version (56M): [ocpwin32-20141117-msvc32-4.01.0+ocp1.exe](http://www.ocamlpro.com/pub/ocpwin/ocpwin-builds/ocpwin32/ocpwin32-20141117-msvc32-4.01.0+ocp1.exe)
