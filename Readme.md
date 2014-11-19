@@ -7,12 +7,43 @@ This is an experiment to provide a self-contained OCaml distribution
 for Windows. You can download the ZIP archive, extract the files where
 you want, add the `bin` directory to your PATH, and you can start
 using OCaml bytecode and native compilers. In particular, you don't need
-to install Cygwin to use this distribution
+to install Cygwin to use this distribution.
 
 We only provide binary releases. If you are interested in getting an
 open-source copy of the sources for your own needs, or in clarifying
 other licensing issues, contact
 [sales@ocamlpro.com](mailto:sales@ocamlpro.com).
+
+## MinGW, full MinGW and MSVC, and Cygwin
+
+OcpWin comes in three variants:
+
+* The "MinGW" variant is an OCaml distribution packaged with a minimal set of
+  MinGW files (the "gcc" C-compiler distribution for Windows). It should be 
+  enough to compile any basic project without Cygwin or MSVC.
+* The "full MinGW" variant is an OCaml distribution packaged with a
+  complete set of MinGW files (the "gcc" C-compiler distribution for
+  Windows). It can be used to compile any project that requires a complete
+  C-compiler suite.
+* The "MSVC" variant is an OCaml distribution packaged to use MSVC
+  (Microsoft Visual Compiler) instead of MinGW. You should install the
+  "Microsoft Windows 7 SDK" version (Microsoft Windows SDK for Windows
+  7 and .NET Framework 3.5 Service Pack 1), but it will work with any
+  other version if you set Visual Studio environment variables
+  correctly.
+
+The two MinGW variants can be configured to use MSVC instead of MinGW
+at runtime. For that, you should look for a file called `ocaml.msvcXX`
+(where `XX` is 32 or 64) in the directory pointed by `ocamlc -where`,
+and then set the variable `OCPCOMP_FILE` to point to that file (with a
+Windows path, not a Cygwin path):
+
+```
+export OCPCOMP_FILE=c:/OCamlPro/OcpWin32/lib/ocaml.msvc32
+```
+
+All these versions will work normally under Cygwin, provided that you
+don't install another OCaml version in your Cygwin PATH before them.
 
 ## Downloads
 
