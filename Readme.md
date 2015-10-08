@@ -57,7 +57,13 @@ There are no stable releases yet.
 
 ## Beta Releases (Available now in 32 and 64 bits)
 
+WARNING: Some versions are known to corrupt long PATH variables !!!
+Please, backup your PATH variable before installing. 2015 versions are
+supposed to fix the problem, please report if it is/it is not the case.
+
 Release notes:
+
+* 20151008: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20151008-release-notes.md)
 
 * 20141117: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20141117-release-notes.md)
 
