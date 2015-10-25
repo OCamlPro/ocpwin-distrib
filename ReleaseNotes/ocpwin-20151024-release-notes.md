@@ -88,6 +88,9 @@ MinGW versions have been downloaded from Mingw-Builds. You can
 
 ## Changes
 
+* 2015-10-24:
+  * Fix empty MSVC files
+
 * 2015-10-08:
   * A version of NSIS is used that should fix the long PATH problems.
 
