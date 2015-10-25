@@ -63,6 +63,12 @@ supposed to fix the problem, please report if it is/it is not the case.
 
 Release notes:
 
+* 20151024: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20151024-release-notes.md)
+
+* 20151024: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20151024-release-notes.md)
+
+* 20151024: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20151024-release-notes.md)
+
 * 20151008: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20151008-release-notes.md)
 
 * 20141117: [Release Notes](https://github.com/OCamlPro/ocpwin-distrib/blob/master/ReleaseNotes/ocpwin-20141117-release-notes.md)

@@ -7,7 +7,7 @@ case $1 in
 esac
 
 DATE="$1"
-SRC="$HOME/WindowsSharedFolder"
+SRC="$HOME/WindowsSharedFolder/ocpwin-builds/$DATE"
 DST="kimsufi2011:/home/www.ocamlpro.com/www/pub/ocpwin/ocpwin-builds/"
 
  scp  \
